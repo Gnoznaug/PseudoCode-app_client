@@ -1,10 +1,8 @@
 import './App.css';
-import { TextField } from '@mui/material';
 import ValidationTextFields from './components/ValidationTextFields/ValidationTextFields';
-import OutputBox from './components/OutputBox/OutputBox';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import { submitLeetcodeLink } from './services'
+import { submitLeetcodeLink, urlChecker } from './services'
 
 function App() {
   return (
@@ -22,22 +20,11 @@ function App() {
           <Grid item xs spacing={10}>
             <ValidationTextFields
               submitToServer={submitLeetcodeLink}
+              linkChecker={urlChecker}
             ></ValidationTextFields>
           </Grid>
         </Grid>
         
-      </header>
-      <header className="Output-box">
-        <Grid
-          container
-          justifyContent="center"
-        >
-          <Grid item xs></Grid>
-          <Grid item xs={10}>
-            <OutputBox></OutputBox>
-          </Grid>
-          <Grid item xs></Grid>
-        </Grid>
       </header>
     </div>
   );

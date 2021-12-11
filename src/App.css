@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #ffffff;
-  min-height: 30vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@
 
 .Output-box {
   background-color: #ffffff;
-  min-height: 0vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,5 +1,6 @@
 import { submitLeetcodeLink } from './answer'
+import { urlChecker } from './answer'
 
 export {
-    submitLeetcodeLink
+    submitLeetcodeLink, urlChecker
 }
